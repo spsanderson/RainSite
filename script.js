@@ -7,4 +7,4 @@ function showLightning() {
     }, 200);
 }
 
-setInterval(showLightning, Math.random() * 3000 + 2000);
+setInterval(showLightning, Math.random() * 100 + 60);
