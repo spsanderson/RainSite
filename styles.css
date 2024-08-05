@@ -1,0 +1,41 @@
+@import url('https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css');
+
+#thunderstorm {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.cloud {
+    animation: moveClouds 20s linear infinite;
+}
+
+@keyframes moveClouds {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(50%); }
+}
+
+#rain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    background-size: 3px 100%;
+    animation: rain 0.5s linear infinite;
+}
+
+@keyframes rain {
+    0% { background-position: 0 0; }
+    100% { background-position: 0 100%; }
+}
+
+#lightning {
+    animation: flashLightning 3s linear infinite;
+}
+
+@keyframes flashLightning {
+    0%, 95%, 100% { opacity: 0; }
+    96%, 98% { opacity: 1; }
+}
