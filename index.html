@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thunderstorm Animation</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+    <div id="thunderstorm" class="relative w-full h-full overflow-hidden">
+        <!-- Clouds -->
+        <div class="cloud absolute w-2/3 h-1/4 bg-gray-800 opacity-75 top-10 left-1/4 rounded-full"></div>
+        <!-- Lightning -->
+        <div id="lightning" class="absolute w-1 h-full bg-yellow-400 top-0 left-1/2 hidden"></div>
+        <!-- Rain -->
+        <div id="rain"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
